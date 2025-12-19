@@ -1,0 +1,2 @@
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db

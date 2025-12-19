@@ -1,0 +1,131 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    padding-bottom: 60px;
+    /* Space for footer */
+}
+
+/* Card Styling Override */
+.card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+    /* Dark text inside cards */
+}
+
+.card-title {
+    color: #2c3e50;
+}
+
+.card-subtitle {
+    color: #6c757d !important;
+}
+
+.badge-secondary {
+    background-color: #34495e;
+    font-weight: 500;
+}
+
+/* Form Styling */
+.form-label {
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.form-control {
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5);
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #3498db;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Checkbox Styling */
+.custom-control-label {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* Light Theme Overrides */
+.light-theme {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    color: #333333;
+}
+
+.light-theme h1 {
+    color: #2c3e50;
+    text-shadow: none;
+}
+
+.light-theme .form-label,
+.light-theme .custom-control-label {
+    color: #2c3e50;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    z-index: 1000;
+    transition: color 0.3s ease;
+}
+
+.light-theme .theme-toggle {
+    color: #2c3e50;
+}
+
+/* Loading/Error Text */
+h1.loading,
+h1.error {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.light-theme h1.loading,
+.light-theme h1.error {
+    color: #2c3e50;
+}

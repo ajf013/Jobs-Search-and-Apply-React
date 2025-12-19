@@ -1,17 +1,33 @@
 import React from 'react'
 import { Form, Col } from 'react-bootstrap'
+import useTypewriter from './useTypewriter'
 
 export default function SearchForm({ params, onParamChange }) {
+  const rolePlaceholder = useTypewriter(['Software Engineer', 'Full Stack Developer', 'Data Scientist', 'Designer']);
+  const locationPlaceholder = useTypewriter(['Chennai','Mumbai', 'Delhi', 'Hyderabad', 'Remote']);
+
   return (
     <Form className="mb-4">
       <Form.Row className="align-items-end">
         <Form.Group as={Col}>
-          <Form.Label>Description</Form.Label>
-          <Form.Control onChange={onParamChange} value={params.description} name="description" type="text" />
+          <Form.Label>Role</Form.Label>
+          <Form.Control
+            onChange={onParamChange}
+            value={params.description}
+            name="description"
+            type="text"
+            placeholder={rolePlaceholder}
+          />
         </Form.Group>
         <Form.Group as={Col}>
           <Form.Label>Location</Form.Label>
-          <Form.Control onChange={onParamChange} value={params.location} name="location" type="text" />
+          <Form.Control
+            onChange={onParamChange}
+            value={params.location}
+            name="location"
+            type="text"
+            placeholder={locationPlaceholder}
+          />
         </Form.Group>
         <Form.Group as={Col} xs="auto" className="ml-2">
           <Form.Check onChange={onParamChange} value={params.full_time} name="full_time" id="full-time" label="Only Full Time" type="checkbox" className="mb-2" />
