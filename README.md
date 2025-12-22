@@ -1,4 +1,4 @@
-# Azure | AWS Quiz App
+# Jobs Search and Apply React 
 
 ### [Live Site](https://jobssearchandapply.netlify.app/)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ed96682d-a518-473f-9738-ff2878101f35/deploy-status?branch=main)](https://app.netlify.com/projects/jobssearchandapply/deploys)
