@@ -5,6 +5,7 @@ import Job from './Job'
 import JobsPagination from './JobsPagination';
 import SearchForm from './SearchForm';
 import Footer from './Footer/Footer';
+import SplashScreen from './SplashScreen/SplashScreen';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './App.css';
@@ -13,6 +14,7 @@ function App() {
   const [params, setParams] = useState({})
   const [page, setPage] = useState(1)
   const { jobs, loading, error, hasNextPage } = useFetchJobs(params, page)
+  const [showSplash, setShowSplash] = useState(true);
 
   // Dark mode state: default to system preference
   const [darkMode, setDarkMode] = useState(() => {
@@ -23,6 +25,13 @@ function App() {
     AOS.init({
       duration: 1000,
     });
+
+    // Hide splash screen after 3 seconds
+    const timer = setTimeout(() => {
+      setShowSplash(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
   }, []);
 
   // Apply theme class to body
@@ -45,27 +54,34 @@ function App() {
 
   return (
     <div>
-      <button
-        className="theme-toggle"
-        onClick={() => setDarkMode(prev => !prev)}
-        aria-label="Toggle Theme"
-      >
-        {darkMode ? '☀️' : '🌙'}
-      </button>
-      <Container className="my-4">
-        <h1 className="mb-4 text-center header-title">Jobs Portal</h1>
-        <SearchForm params={params} onParamChange={handleParamChange} />
-        <JobsPagination page={page} setPage={setPage} hasNextPage={hasNextPage} />
-        {loading && <h1 className="loading">Loading...</h1>}
-        {error && <h1 className="error">Error. Try Refreshing.</h1>}
-        {jobs.map(job => {
-          return <Job key={job.id} job={job} />
-        })}
-        <JobsPagination page={page} setPage={setPage} hasNextPage={hasNextPage} />
-      </Container>
-      <Footer />
+      {showSplash ? (
+        <SplashScreen />
+      ) : (
+        <>
+          <button
+            className="theme-toggle"
+            onClick={() => setDarkMode(prev => !prev)}
+            aria-label="Toggle Theme"
+          >
+            {darkMode ? '☀️' : '🌙'}
+          </button>
+          <Container className="my-4">
+            <h1 className="mb-4 text-center header-title">Jobs Portal</h1>
+            <SearchForm params={params} onParamChange={handleParamChange} />
+            <JobsPagination page={page} setPage={setPage} hasNextPage={hasNextPage} />
+            {loading && <h1 className="loading">Loading...</h1>}
+            {error && <h1 className="error">Error. Try Refreshing.</h1>}
+            {jobs.map(job => {
+              return <Job key={job.id} job={job} />
+            })}
+            <JobsPagination page={page} setPage={setPage} hasNextPage={hasNextPage} />
+          </Container>
+          <Footer />
+        </>
+      )}
     </div>
   )
 }
 
 export default App;
+
