@@ -4,7 +4,7 @@
 
 A premium, glassmorphic React portal for searching, tracking, and applying for jobs with intelligent resume matching and real-time analytics.
 
-### 🌐 [Live Site](https://jobssearchandapply.netlify.app/)
+### 🌐 [Live Site](https://jobs.fcruz.org/)
 
 ---
 
