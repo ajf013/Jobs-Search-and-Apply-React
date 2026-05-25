@@ -1,0 +1,67 @@
+.glass-textarea {
+    background: var(--glass-bg) !important;
+    border: 1px solid var(--glass-border) !important;
+    color: var(--text-primary) !important;
+    border-radius: 8px !important;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.glass-textarea:focus {
+    background: var(--glass-bg) !important;
+    border-color: var(--accent-cyan) !important;
+    box-shadow: 0 0 8px var(--glass-border-focus) !important;
+}
+
+.btn-cyan-gradient {
+    background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%) !important;
+    color: #0d1117 !important;
+    font-weight: 600 !important;
+    border-radius: 20px !important;
+    transition: all 0.3s ease !important;
+}
+
+.light-theme .btn-cyan-gradient {
+    background: linear-gradient(135deg, #1a6fa8 0%, #008a84 100%) !important;
+    color: #ffffff !important;
+}
+
+.btn-cyan-gradient:hover {
+    box-shadow: 0 0 12px rgba(0, 242, 254, 0.5) !important;
+    transform: translateY(-1px);
+}
+
+.light-theme .btn-cyan-gradient:hover {
+    box-shadow: 0 0 12px rgba(26, 111, 168, 0.4) !important;
+}
+
+.btn-upload-glass {
+    background: var(--glass-bg) !important;
+    border: 1px solid var(--glass-border) !important;
+    color: var(--text-primary) !important;
+    border-radius: 20px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-upload-glass:hover {
+    background: var(--glass-border) !important;
+    color: var(--text-primary) !important;
+}
+
+.success-glass {
+    background: rgba(33, 186, 69, 0.15) !important;
+    border: 1px solid rgba(33, 186, 69, 0.3) !important;
+    color: #21ba45 !important;
+}
+.success-glass .header {
+    color: #21ba45 !important;
+}
+.success-glass p {
+    color: var(--text-primary) !important;
+    opacity: 0.9;
+}
+
+.gap-2 {
+    gap: 10px;
+}

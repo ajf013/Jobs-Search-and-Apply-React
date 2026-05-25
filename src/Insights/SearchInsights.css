@@ -1,0 +1,63 @@
+.insights-card.glass-panel {
+    margin-top: 10px;
+}
+
+.insights-card .ui.grid {
+    margin: 0;
+}
+
+.insight-section {
+    padding: 15px;
+    background: var(--glass-bg);
+    border-radius: 12px;
+    border: 1px solid var(--glass-border);
+    height: 100%;
+}
+
+.insight-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+}
+
+.stats-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-muted-cyan {
+    color: rgba(0, 242, 254, 0.6) !important;
+    font-size: 0.8rem !important;
+    text-transform: uppercase;
+}
+
+.light-theme .text-muted-cyan {
+    color: rgba(26, 111, 168, 0.8) !important;
+}
+
+.text-cyan {
+    color: var(--accent-cyan);
+}
+
+.text-indigo {
+    color: var(--accent-indigo);
+}
+
+.insights-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.insights-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--glass-border);
+    font-size: 0.9rem;
+}
+
+.insights-list li:last-child {
+    border-bottom: none;
+}

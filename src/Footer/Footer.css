@@ -18,57 +18,32 @@
     margin: 0 5px;
 }
 
-.footer_Icons .footer_git a {
-    color: rgb(83, 82, 83);
-    transform: scale(1);
-    transition: 0.5s;
+.footer_Icons span a {
+    color: var(--text-secondary) !important;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
 }
 
-.footer_Icons .footer_link a {
-    color: rgba(255, 255, 255, 0.904);
-    transform: scale(1);
-    transition: 0.5s;
-}
-
-.footer_Icons .footer_insta a {
-    color: rgb(228, 216, 223);
-    transform: scale(1);
-    transition: 0.5s;
-}
-
-.footer_Icons .footer_wht a {
-    color: rgba(26, 131, 26, 0.958);
-    transform: scale(1);
-    transition: 0.5s;
-}
-
-.footer_Icons .footer_twi a {
-    color: rgb(39, 145, 202);
-    transform: scale(1);
-    transition: 0.5s;
+.footer_Icons span a:hover {
+    transform: scale(1.2);
 }
 
 .footer_Icons .footer_git a:hover {
-    color: rgb(196, 191, 191);
-    transform: scale(1.2);
+    color: #6e5494 !important; /* Github color */
 }
 
 .footer_Icons .footer_link a:hover {
-    color: rgb(51, 39, 156);
-    transform: scale(1.2);
+    color: #0077b5 !important; /* LinkedIn color */
 }
 
 .footer_Icons .footer_insta a:hover {
-    color: rgb(198, 72, 202);
-    transform: scale(1.2);
+    color: #e1306c !important; /* Instagram color */
 }
 
 .footer_Icons .footer_wht a:hover {
-    color: green;
-    transform: scale(1.2);
+    color: #25d366 !important; /* Whatsapp color */
 }
 
 .footer_Icons .footer_twi a:hover {
-    color: lightblue;
-    transform: scale(1.2);
+    color: #1da1f2 !important; /* Twitter color */
 }

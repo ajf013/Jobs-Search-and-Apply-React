@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #eef2f1;
   z-index: 9999;
   animation: fadeOut 0.5s ease-in-out 2.5s forwards;
 }

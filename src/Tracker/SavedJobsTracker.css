@@ -1,0 +1,107 @@
+.empty-tracker {
+    padding: 60px 20px;
+    background: var(--glass-bg);
+    border-radius: 20px;
+    border: 1px dashed var(--glass-border);
+}
+
+.max-w-500 {
+    max-width: 500px;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.border-top-glass {
+    border-top: 1px solid var(--glass-border) !important;
+}
+
+.bg-glass-small {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+}
+
+.notes-preview {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    word-break: break-word;
+}
+
+.font-size-small {
+    font-size: 0.85rem !important;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Status dropdown styles */
+.status-dropdown {
+    padding: 6px 12px !important;
+    border-radius: 20px !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    background: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--glass-border) !important;
+}
+
+.status-badge-blue {
+    background: rgba(33, 133, 208, 0.2) !important;
+    border-color: rgba(33, 133, 208, 0.4) !important;
+    color: #2185d0 !important;
+}
+
+.status-badge-orange {
+    background: rgba(242, 113, 28, 0.2) !important;
+    border-color: rgba(242, 113, 28, 0.4) !important;
+    color: #f2711c !important;
+}
+
+.status-badge-green {
+    background: rgba(33, 186, 69, 0.2) !important;
+    border-color: rgba(33, 186, 69, 0.4) !important;
+    color: #21ba45 !important;
+}
+
+.status-badge-red {
+    background: rgba(219, 40, 40, 0.2) !important;
+    border-color: rgba(219, 40, 40, 0.4) !important;
+    color: #db2828 !important;
+}
+
+.status-badge-grey {
+    background: rgba(118, 118, 118, 0.2) !important;
+    border-color: rgba(118, 118, 118, 0.4) !important;
+    color: #cccccc !important;
+}
+
+.btn-apply-direct {
+    display: inline-block;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+    color: #0d1117;
+    font-weight: 600;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-apply-direct:hover {
+    color: #0d1117;
+    opacity: 0.95;
+    box-shadow: 0 0 10px rgba(0, 242, 254, 0.4);
+    transform: translateY(-1px);
+}
+
+.btn-delete {
+    border-radius: 50% !important;
+    width: 32px !important;
+    height: 32px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
